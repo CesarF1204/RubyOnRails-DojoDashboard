@@ -1,0 +1,17 @@
+<div class="container">
+<h1>Create New Dojo User</h1>
+<form action="/dojos/create_process" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="branch">Branch: </label>
+    <input type="text" name="branch" id="branch">
+    <label for="street">Street: </label>
+    <input type="text" name="street" id="street">
+    <label for="city">City: </label>
+    <input type="text" name="city" id="city">
+    <label for="state">State: </label>
+    <input type="text" name="state" id="state">
+
+    <input type="submit" value="Create">
+</form>
+<a href="/">Go Back</a>
+</div>

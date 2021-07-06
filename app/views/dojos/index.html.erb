@@ -1,4 +1,5 @@
 <h1>Listing <%= @dojos.count %> Dojos</h1>
+<a href="/dojos/new">New Dojo</a>
 <table>
     <thead>
         <tr>
@@ -6,6 +7,7 @@
             <th>Street</th>
             <th>City</th>
             <th>State</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -15,6 +17,11 @@
             <td><%= dojo.street %></td>
             <td><%= dojo.city %></td>
             <td><%= dojo.state %></td>
+            <td>
+                <a href="#">Show</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+            </td>
         </tr>
     <% end %>
     </tbody>
