@@ -38,7 +38,7 @@ form, label, input{
 form {
     margin-bottom: 20px;
 }
-input[type='text'] {
+input[type='text'], input[type='email'], select {
     background: none;
     color: black;
     border: 1px solid teal;
@@ -46,7 +46,8 @@ input[type='text'] {
     width: 230px;
     border-radius: 4px;
 }
-input[type='text']:focus {
+input[type='text']:focus, input[type='email']:focus, select:focus {
+    outline: none;
     width: 250px;
     transition: 0.5s ease;
 }
@@ -63,4 +64,7 @@ input[type='submit']:hover {
     transform: translateY(-0.3em);
     box-shadow: 4px 4px rgba(0,0,0,0.5);
     transition: 0.3s ease;
+}
+#branch {
+    display: inline;
 }
